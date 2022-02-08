@@ -1,0 +1,138 @@
+table, tr, th, td {
+    border: 2px solid #375280;
+  }
+
+  h2, h1 {
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 25px;
+    color: #375280;
+  }
+
+  th {
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 15px;
+    color: #375280;
+  }
+
+  
+  table {
+      width: 100%;
+  }
+
+ .modaladdNewLine {
+   display: flex;
+   justify-content: center;
+   padding: 15px;
+ }
+
+  button{
+    background: linear-gradient(to right top, #89AFE0, #3A5985);
+    cursor: pointer;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #E4E4E4;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    font-family: 'Kameron', serif;
+    font-weight: 500;
+  }
+
+  .modal-container .modalLine button.close {
+    display: flex;
+    justify-content: center;
+    width: 75px;
+    height: 25px;
+    align-items: center;
+    margin: 5px;
+
+  }
+
+  .modal-container .modalLine form input.insertdata {
+    background: linear-gradient(to right top, #89AFE0, #3A5985);
+    cursor: pointer;
+    border: 0;
+    padding: 5px 10px;
+    font-size: 13px;
+    color: #E4E4E4;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    font-family: 'Kameron', serif;
+    font-weight: 500;
+    width: 95px;
+    height: 25px;
+    align-items: center;
+    margin: 5px;
+    display: flex;
+    
+  }
+
+  td.button{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+  }
+  
+  .modal-container {
+    width: 110vh;
+    height: 70vh;
+    background: rgba(135, 159, 236, 0.94);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:10%;
+    left: 25%;
+    z-index: 20000;
+    opacity: 0;
+    padding: 8px;
+    pointer-events: none;
+   
+}
+
+.modal-container .modalLine h2 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: #375280;
+  font-family: 'Source Serif 4', sans-serif;
+  padding: 15px;
+}
+
+
+
+.modal-container .modalLine form {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-items: stretch;
+  width: 670px;
+  flex-flow: column wrap;
+  justify-content: center;
+  
+  height: 180px;
+  padding: 5px;
+}
+
+.modal-container .modalLine form input{
+  display: flex;
+  align-items: center;
+  height: 18px;
+  width: 20%;
+  padding: 3px;
+  margin: 5px;
+}
+
+.modal-container .modalLine form label {
+  font-family: 'Kameron', serif;
+  color: #375280;
+  font-weight: bold 400;
+
+}
+
+
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+

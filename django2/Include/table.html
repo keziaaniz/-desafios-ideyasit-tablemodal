@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="table.css" />
+
+    <script defer src="Modal.js"></script>
+    <script defer src="table.js"></script>
+    
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>Port Moviment Table</h1>
+    <div id="dfInformation">
+    <table id="tbInformation">
+        <tr>
+            <th scope="col" id="shipName">Ship Name</th>
+            <th sccop="col" id="agency">Maritime Agency</th>
+            <th scope="col" id="cameFrom">Came from</th>
+            <th scope="col" id="berth">Berth</th>
+            <th scope="col" id="deadline">Deadline</th>
+            <th scope="col" id="blNumber">B/L Number</th>
+            <th scope="col" id="cargo">Cargo</th>
+            <th scope="col" id="shipType">Type</th>
+            <th scope="col" id="actions">Actions</th>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="button">
+                <button class="button-edit">Edit</button>
+                <button class="button-remove">Remove</button>
+            </tr>
+           
+    </table>
+</div>
+
+<div id="modalNewLine" class="modaladdNewLine">
+    <button class="addNewLine">Add New Data</button>
+</div>
+
+   
+    <div id="modalLine" class="modal-container">
+        <div class="modalLine">
+            <h2>Enter the required data</h2>
+            <form>
+                <label>Ship Name</label>
+                <input  name="txtShipName" type="text" placeholder="Ship Name">
+
+                <label>Maritime Agency</label>
+                <input  name="txtMaritimeAgency" type="text" placeholder="Maritime Agency">
+
+                <label>Came from</label>
+                <input  name="txtCameFrom" type="text" placeholder="Came from">
+
+                <label>Berth Number</label>
+                <input  name="txtBerthNumber" type="number" placeholder="Berth">
+
+                <label>Deadline</label>
+                <input  name="txtDeadline" type="datetime-local" placeholder="Deadline">
+
+                <label>B/L Number</label>
+                <input  name="txtBLNumber" type="number" placeholder="B/L Number">
+
+                <label>Cargo</label>
+                <input  name="txtCargo" type="text" placeholder="Cargo">
+
+                <label>Type</label>
+                <input  name="txtType" type="text" placeholder="Type">
+
+                <input type="button" class="insertdata" onclick="shipInformation(txtShipName.value, txtMaritimeAgency.value, txtCameFrom.value, txtBerthNumber.value, Deadline.value, txtBLNumber.value, txtCargo.value, txtType.value)" value="Insert Data"></input>
+
+
+            </form>
+            <button class="close" >close</button>
+        </div>
+    </div>
+</body>
+</html>
