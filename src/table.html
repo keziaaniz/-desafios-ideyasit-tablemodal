@@ -21,36 +21,37 @@
 </head>
 <body>
     <h1>Port Moviment Table</h1>
-    <div id="dfInformation">
-    <table id="tbInformation">
-        <tr>
-            <th scope="col" id="shipName">Ship Name</th>
-            <th sccop="col" id="agency">Maritime Agency</th>
-            <th scope="col" id="cameFrom">Came from</th>
-            <th scope="col" id="berth">Berth</th>
-            <th scope="col" id="deadline">Deadline</th>
-            <th scope="col" id="blNumber">B/L Number</th>
-            <th scope="col" id="cargo">Cargo</th>
-            <th scope="col" id="shipType">Type</th>
-            <th scope="col" id="actions">Actions</th>
-        </tr>
-        
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td class="button">
-                <button class="button-edit">Edit</button>
-                <button class="button-remove">Remove</button>
+    <div id="dtInformation">
+        <table id="tbInformation">
+            <tr>
+                <td >Ship Name</td>
+                <td >Maritime Agency</td>
+                <td >Came from</td>
+                <td >Berth</td>
+                <td >Deadline</td>
+                <td >B/L Number</td>
+                <td >Cargo</td>
+                <td >Type</td>
+                <td >Actions</td>
             </tr>
+        
+            <!-- <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="button">
+                    <button class="button-edit">Edit</button>
+                    <button class="button-remove">Remove</button>
+                </td>
+            </tr> -->
            
-    </table>
-</div>
+        </table>
+    </div>
 
 <div id="modalNewLine" class="modaladdNewLine">
     <button class="addNewLine">Add New Data</button>
@@ -60,7 +61,7 @@
     <div id="modalLine" class="modal-container">
         <div class="modalLine">
             <h2>Enter the required data</h2>
-            <form>
+            <form id="create-form">
                 <label>Ship Name</label>
                 <input  name="txtShipName" type="text" placeholder="Ship Name">
 
@@ -85,8 +86,7 @@
                 <label>Type</label>
                 <input  name="txtType" type="text" placeholder="Type">
 
-                <input type="button" class="insertdata" onclick="shipInformation(txtShipName.value, txtMaritimeAgency.value, txtCameFrom.value, txtBerthNumber.value, Deadline.value, txtBLNumber.value, txtCargo.value, txtType.value)" value="Insert Data"></input>
-
+                <button type="button" class="insertdata" onclick="shipInformation(txtShipName.value, txtMaritimeAgency.value, txtCameFrom.value, txtBerthNumber.value, Deadline.value, txtBLNumber.value, txtCargo.value, txtType.value)" value="Insert Data"></input> 
 
             </form>
             <button class="close" >close</button>
