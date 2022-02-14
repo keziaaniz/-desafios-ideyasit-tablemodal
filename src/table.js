@@ -19,7 +19,7 @@
      cellBLNumber.innerHTML = BLNumber;
      cellCargo.innerHTML = Cargo;
     cellType.innerHTML = Type;
-}
+};
 
 function handleSubmit(e) {
     e.preventDefault();
